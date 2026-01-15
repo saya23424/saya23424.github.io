@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+        <title>soli的个人博客 - 欢迎来到我的博客</title>
+      <meta charset="utf-8" />
+      <meta name="generator" content="Pelican" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <meta name="tags" content="开始" />
+    <meta name="tags" content="介绍" />
+    <meta name="tags" content="Pelican" />
+
+  </head>
+
+  <body>
+      <header>
+          <hgroup><h1><a href="https://saya23424.github.io/">soli的个人博客</a></h1></hgroup>
+          <nav><ul>
+              <li><a href="/">首页</a></li>
+              <li><a href="/categories.html">文章</a></li>
+              <li><a href="/tags.html">标签</a></li>
+              <li><a href="/pages/about.html">关于</a></li>
+                <li><a href="https://saya23424.github.io/pages/guan-yu-wo.html" >关于我</a></li>
+                <li><a href="https://saya23424.github.io/category/bo-ke/"  aria-current="page" >博客</a></li>
+          </ul></nav>
+      </header>
+      <main>
+  <article>
+    <header>
+      <h2>
+        <a href="https://saya23424.github.io/huan-ying-lai-dao-wo-de-bo-ke/" rel="bookmark"
+           title="Permalink to 欢迎来到我的博客">欢迎来到我的博客</a></h2>
+      
+    </header>
+    <h1>欢迎来到我的博客！</h1>
+<p>这是我的第一篇博客文章，记录我使用Pelican创建这个博客的过程。</p>
+<h2>为什么选择Pelican？</h2>
+<p>在尝试了Jekyll之后，我决定使用Pelican，原因如下：</p>
+<ol>
+<li><strong>Python生态</strong> - 我已经熟悉Python，不需要学习Ruby</li>
+<li><strong>安装简单</strong> - 只需要<code>pip install pelican markdown</code></li>
+<li><strong>语法友好</strong> - 使用Jinja2模板，语法简洁</li>
+<li><strong>功能完整</strong> - 支持分类、标签、RSS等所有博客功能</li>
+</ol>
+<h2>博客规划</h2>
+<p>我计划在这个博客上分享：</p>
+<h3>📚 学习笔记</h3>
+<ul>
+<li>Python编程技巧</li>
+<li>机器学习算法理解</li>
+<li>Web开发经验</li>
+<li>数据处理工具</li>
+</ul>
+<h3>🛠️ 项目展示</h3>
+<ul>
+<li>文件重命名工具</li>
+<li>理财计算器</li>
+<li>自动化脚本</li>
+<li>实用小工具</li>
+</ul>
+<h3>💭 思考总结</h3>
+<ul>
+<li>技术观点</li>
+<li>学习方法</li>
+<li>职业规划</li>
+<li>生活感悟</li>
+</ul>
+<h2>第一个Python代码示例</h2>
+<p>既然是技术博客，那就来点代码吧：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 我的第一个Python程序</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Pelican Blog!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;欢迎来到我的博客世界&quot;</span><span class="p">)</span>
+
+<span class="c1"># 简单的计算函数</span>
+<span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;两个数相加&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="c1"># 测试函数</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;3 + 5 = </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 列表操作</span>
+<span class="n">languages</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Python&#39;</span><span class="p">,</span> <span class="s1">&#39;JavaScript&#39;</span><span class="p">,</span> <span class="s1">&#39;HTML&#39;</span><span class="p">,</span> <span class="s1">&#39;CSS&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;我会编程的语言：</span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">languages</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2>文件重命名工具分享</h2>
+<p>最近我写了一个文件重命名工具，可以批量重命名图片文件：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="k">def</span> <span class="nf">random_rename_files</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;随机重命名当前目录下的图片文件&quot;&quot;&quot;</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpg&#39;</span><span class="p">))]</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">name</span><span class="p">,</span> <span class="n">ext</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="n">random_str</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">6</span><span class="p">))</span>
+        <span class="n">new_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">random_str</span><span class="si">}{</span><span class="n">i</span><span class="si">}{</span><span class="n">ext</span><span class="si">}</span><span class="s2">&quot;</span>
+
+        <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">new_name</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;重命名: </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2"> → </span><span class="si">{</span><span class="n">new_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 使用示例</span>
+<span class="c1"># random_rename_files()</span>
+</code></pre></div>
+
+<p>这个工具帮我整理了很多混乱的文件名！</p>
+<h2>学习机器学习</h2>
+<p>最近我也在学习机器学习，从最基础的线性回归开始：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># 简单的线性回归示例</span>
+<span class="k">def</span> <span class="nf">simple_linear_regression</span><span class="p">():</span>
+    <span class="c1"># 模拟数据</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">]]</span>  <span class="c1"># 特征</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>           <span class="c1"># 目标值</span>
+
+    <span class="c1"># 创建和训练模型</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+    <span class="c1"># 预测</span>
+    <span class="n">X_new</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">6</span><span class="p">]]</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_new</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;预测结果：当X=6时，Y=</span><span class="si">{</span><span class="n">y_pred</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;模型系数：</span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;截距：</span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">intercept_</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># 运行示例</span>
+<span class="n">simple_linear_regression</span><span class="p">()</span>
+</code></pre></div>
+
+<h2>接下来的计划</h2>
+<p>接下来我计划：</p>
+<ol>
+<li><strong>完善博客功能</strong> - 添加评论系统、搜索功能</li>
+<li><strong>写技术文章</strong> - 分享更多编程经验</li>
+<li><strong>开发小工具</strong> - 创造更多实用的脚本</li>
+<li><strong>学习新技术</strong> - 深入机器学习和Web开发</li>
+</ol>
+<h2>联系方式</h2>
+<p>如果你对我的博客感兴趣，可以通过以下方式联系我：</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/yourname">yourname</a></li>
+<li><strong>邮箱</strong>: your.email@example.com</li>
+</ul>
+<h2>结语</h2>
+<p>感谢阅读我的第一篇博客文章！这是一个新的开始，我会在这里记录我的学习过程和成长经历。</p>
+<p>如果你也在学习编程，或者对技术感兴趣，欢迎和我交流！</p>
+<hr>
+<p><em>本文使用Pelican + Markdown编写，托管在GitHub Pages上。</em></p>
+    <footer>
+      <p>Published: <time datetime="2025-01-15T15:00:00+08:00">
+        周三 15 一月 2025
+      </time></p>
+        <address>
+          By             <a href="https://saya23424.github.io/author/soli.html">soli</a>
+        </address>
+        <p>
+          Category: <a href="https://saya23424.github.io/category/bo-ke/">博客</a>
+        </p>
+        <p>
+          Tags:
+            <a href="https://saya23424.github.io/tag/kai-shi/">开始</a>
+            <a href="https://saya23424.github.io/tag/jie-shao/">介绍</a>
+            <a href="https://saya23424.github.io/tag/pelican/">Pelican</a>
+        </p>
+    </footer>
+  </article>
+      </main>
+      <footer>
+          <address>
+            Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+          </address>
+      </footer>
+  </body>
+</html>
